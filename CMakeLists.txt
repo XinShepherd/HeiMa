@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD 17)
 file (GLOB_RECURSE files *.cpp)
 foreach (file ${files})
     string(REGEX REPLACE ".+/(.+)\\..*" "\\1" exe ${file})
-    add_executable (${exe} ${file})
+    add_executable (${exe} ${file}
+            func/customMath.cpp)
     message (\ \ \ \ --\ src/${exe}.cpp\ will\ be\ compiled\ to\ bin/${exe})
 endforeach ()

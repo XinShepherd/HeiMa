@@ -1,6 +1,3 @@
-//
-// Created by Fuxin on 2023/8/13.
-//
 #include <iostream>
 
 int main() {
